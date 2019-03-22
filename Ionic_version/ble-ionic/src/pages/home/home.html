@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="scan()">
+        Scan
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list class="ble_list"> 
+    <button ion-item *ngFor="let device of devices" (click)="deviceSelected(device)">
+      <h2>{{ device.name || 'Unnamed' }}</h2>
+      <p>{{ device.id }}</p>
+      <p></p>
+    </button>  
+   </ion-list> 
+   <div style="margin-top: 20%">
+    <p>Selected device:</p>
+    <p>device name: {{device_name}}</p>
+    <p>device adresse: {{device_addr}}</p>
+    <p>Temperature: {{device_temp}} </p>
+    <p>Time: {{device_time}}</p>
+   </div>
+   
+</ion-content>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ble-Android</string>
+    <string name="ble_not_supported">Bluetooth low Energy not supported</string>
+    <string name="unknown_device">Unknown Device</string>
+</resources>
